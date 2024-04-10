@@ -1,0 +1,82 @@
+@import '../../../styles/mixin/mixin';
+
+.mainView{
+    position: relative;
+
+    .pageTitle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        h1{
+            img{
+                width: 100%;
+                min-width: 400px
+            }
+        }
+    }
+
+    .scrollDown{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        @keyframes circleMove {
+            0%{
+                bottom: 45px;
+            }
+
+            100%{
+                bottom: -5px;
+            }
+        }
+
+        @keyframes circleOpacity {
+            0%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #eee;
+            -webkit-animation: circleMove 1.6s ease-in-out infinite, circleOpacity 1.6s ease-out infinite;
+            animation: circleMove 1.6s ease-in-out infinite, circleOpacity 1.6s ease-out infinite;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 50px;
+            background: #eee;
+        }
+
+        span{
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            color: #eee;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+            writing-mode: vertical-rl;
+            text-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
+        }
+    }
+}

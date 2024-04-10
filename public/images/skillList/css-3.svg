@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2965f1;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #264de4;
+      }
+
+      .cls-4 {
+        fill: #ebebeb;
+      }
+    </style>
+  </defs>
+  <path class="cls-3" d="m127.86,256l-92.18-25.59L15.14,0h225.73l-20.56,230.37-92.44,25.63h0Z"/>
+  <path class="cls-1" d="m202.69,215.7l17.57-196.86h-92.27v217.57l74.69-20.71h0Z"/>
+  <path class="cls-4" d="m62.23,104.29l2.53,28.26h63.24v-28.26H62.23Z"/>
+  <path class="cls-4" d="m57.14,47.1l2.57,28.26h68.29v-28.26H57.14Z"/>
+  <path class="cls-4" d="m128,177.69l-.12.03-31.47-8.5-2.01-22.54h-28.37l3.96,44.37,57.89,16.07.13-.04v-29.4h0Z"/>
+  <path class="cls-2" d="m193.59,104.29l5.1-57.2h-70.79v28.26h39.82l-2.57,28.94h-37.25v28.26h34.8l-3.28,36.65-31.52,8.51v29.4l57.93-16.06.43-4.77,6.64-74.4.69-7.59h0Z"/>
+</svg>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_名称未設定グラデーション_2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#_名称未設定グラデーション);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: url(#_名称未設定グラデーション_3);
+      }
+
+      .cls-5 {
+        mask: url(#mask-1);
+      }
+
+      .cls-6 {
+        mask: url(#mask);
+      }
+    </style>
+    <linearGradient id="_名称未設定グラデーション" data-name="名称未設定グラデーション" x1="-269.28" y1="527.92" x2="-269.64" y2="527.28" gradientTransform="translate(69105 154037.68) scale(256 -291.7)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#41873f"/>
+      <stop offset=".33" stop-color="#418b3d"/>
+      <stop offset=".64" stop-color="#419637"/>
+      <stop offset=".93" stop-color="#3fa92d"/>
+      <stop offset="1" stop-color="#3fae2a"/>
+    </linearGradient>
+    <mask id="mask" x="15.58" y=".04" width="224.37" height="255.96" maskUnits="userSpaceOnUse">
+      <g id="mask-3">
+        <path id="path-2" class="cls-3" d="m133.83,1.64c-3.81-2.14-8.33-2.14-12.13,0L21.53,59.46c-3.81,2.14-5.95,6.19-5.95,10.47v115.87c0,4.28,2.38,8.33,5.95,10.47l100.17,57.82c3.81,2.14,8.33,2.14,12.13,0l100.17-57.82c3.81-2.14,5.95-6.19,5.95-10.47v-115.87c0-4.28-2.38-8.33-5.95-10.47L133.83,1.64h0Z"/>
+      </g>
+    </mask>
+    <linearGradient id="_名称未設定グラデーション_2" data-name="名称未設定グラデーション 2" x1="-269.48" y1="527.59" x2="-268.46" y2="528.23" gradientTransform="translate(67488.92 153971.9) scale(250.03 -291.57)" gradientUnits="userSpaceOnUse">
+      <stop offset=".14" stop-color="#41873f"/>
+      <stop offset=".4" stop-color="#54a044"/>
+      <stop offset=".71" stop-color="#66b848"/>
+      <stop offset=".91" stop-color="#6cc04a"/>
+    </linearGradient>
+    <mask id="mask-1" x="15.58" y="0" width="224.84" height="255.75" maskUnits="userSpaceOnUse">
+      <g id="mask-6">
+        <path id="path-5" class="cls-3" d="m133.83,1.64c-3.81-2.14-8.33-2.14-12.13,0L21.53,59.46c-3.81,2.14-5.95,6.19-5.95,10.47v115.87c0,4.28,2.38,8.33,5.95,10.47l100.17,57.82c3.81,2.14,8.33,2.14,12.13,0l100.17-57.82c3.81-2.14,5.95-6.19,5.95-10.47v-115.87c0-4.28-2.38-8.33-5.95-10.47L133.83,1.64h0Z"/>
+      </g>
+    </mask>
+    <linearGradient id="_名称未設定グラデーション_3" data-name="名称未設定グラデーション 3" x1="-269.89" y1="527.63" x2="-268.97" y2="527.63" gradientTransform="translate(67419.69 154096.51) scale(249.76 -291.81)" gradientUnits="userSpaceOnUse">
+      <stop offset=".09" stop-color="#6cc04a"/>
+      <stop offset=".29" stop-color="#66b848"/>
+      <stop offset=".6" stop-color="#54a044"/>
+      <stop offset=".86" stop-color="#41873f"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-2" d="m133.83,1.64c-3.81-2.14-8.33-2.14-12.13,0L21.53,59.46c-3.81,2.14-5.95,6.19-5.95,10.47v115.87c0,4.28,2.38,8.33,5.95,10.47l100.17,57.82c3.81,2.14,8.33,2.14,12.13,0l100.17-57.82c3.81-2.14,5.95-6.19,5.95-10.47v-115.87c0-4.28-2.38-8.33-5.95-10.47L133.83,1.64h0Z"/>
+  <g class="cls-6">
+    <path class="cls-1" d="m234.24,59.46L133.59,1.64c-.95-.48-2.14-.95-3.09-1.19L17.72,193.65c.95,1.19,2.14,2.14,3.33,2.86l100.64,57.82c2.86,1.67,6.19,2.14,9.28,1.19L236.85,61.84c-.71-.95-1.67-1.67-2.62-2.38h0Z"/>
+  </g>
+  <g class="cls-5">
+    <path class="cls-4" d="m234.47,196.27c2.86-1.67,5-4.52,5.95-7.61L130.02.22c-2.86-.48-5.95-.24-8.57,1.43L21.53,59.22l107.78,196.53c1.43-.24,3.09-.71,4.52-1.43l100.64-58.05h0Z"/>
+  </g>
+</svg>

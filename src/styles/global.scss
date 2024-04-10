@@ -1,0 +1,79 @@
+@import './vendor/reset.scss';
+@import './mixin/mixin';
+
+
+body{
+    font-size: 14px;
+    
+    @include md{
+        font-size: 16px;
+    }
+
+    &.hidden{
+        overflow: hidden;
+    }
+
+    a,
+    button{
+        transition: 0.3s;
+        color: #333;
+
+        &::before,
+        &::after{
+            transition: 0.3s;
+        }
+    }
+
+    .inner{
+        margin: 0 auto;
+        max-width: 430px;
+        width: 90%;
+    
+        @include md {
+            max-width: 652.8px;
+            width: 100%;    
+        }
+    
+        @include lg {
+            max-width: 843.2px;
+        }
+    
+        @include xl {
+            max-width: 1020px;
+        }
+    
+        @include xxl {
+            max-width: 1190px;
+        }    
+    }    
+
+}
+
+main{
+    overflow-x: hidden;
+    ul,
+    ol{
+        li{
+            color: #333;
+        }
+    }
+
+    details {
+        summary{
+            color: #333;
+        }    
+    }
+
+    dl{
+        color: #333;
+    }
+    
+    h1{
+        margin-bottom: 1rem;
+    }    
+
+    h2{
+        margin-bottom: 2rem;
+    }
+}
+

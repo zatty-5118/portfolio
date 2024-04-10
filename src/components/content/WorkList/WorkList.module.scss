@@ -1,0 +1,54 @@
+@import '../../../styles/mixin/mixin';
+
+.workList{
+    padding: 4rem 0;
+    position: relative;
+    background-color: cl(cl-blue);
+
+    .wrapper{
+        ul{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 2rem;
+    
+            @include md {
+                grid-template-columns: repeat(2,1fr);
+            }
+    
+            @include lg {
+                grid-template-columns: repeat(3,1fr);
+            }
+    
+    
+            li{
+                button{
+                    opacity: 1;
+                    h2{
+                        font-size: 18px;
+                        margin-top: 0.5rem;
+                    }
+                    
+                    div{
+                        overflow: hidden;
+                        border-radius: 5px;
+                        box-shadow: 0 0 6px #0000004d;
+                        img{
+                            aspect-ratio: 16/9;
+                            transition: 0.3s all;
+                        }    
+                    }
+
+                    @include hover{
+                        opacity: 0.3;
+                        div{
+                            img{
+                                transform: scale(1.1);
+                                transition: 0.3s all;
+                            }    
+                        }    
+                    }
+                }
+            }
+        }
+    }
+}

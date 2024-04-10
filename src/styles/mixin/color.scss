@@ -1,0 +1,14 @@
+$colors: (
+  cl-black: #333333,
+  cl-white: #ffffff,
+  cl-lightGray: #f7f7f7,
+  cl-gray: #ccc,
+  cl-darkGray: #7f7f7f,
+  cl-lightBlue: #dde9f8,
+  cl-blue: #bfd4ed,
+  cl-darkBlue: #5780b3,
+);
+
+@function cl($key) {
+  @return map-get($colors, $key);
+}

@@ -1,0 +1,116 @@
+@import '../../../styles/mixin/mixin';
+
+.header{
+    border-bottom: 3px solid cl(cl-blue);
+    padding: 0.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: cl(cl-darkBlue);
+    z-index: 3;
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;    
+        width: 100%;
+        margin: 0 auto; 
+
+        @include md {
+            max-width: 652.8px;
+        }
+    
+        @include lg {
+            max-width: 843.2px;
+        }
+    
+        @include xl {
+            max-width: 1020px;
+        }
+    
+        @include xxl {
+            max-width: 1190px;
+        }    
+    }
+
+    .logo{
+        a{
+            opacity: 1;
+            @include hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .link{
+
+            a{
+                font-size: 12px;
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+                align-items: center;
+                color: cl(cl-white);
+                cursor: pointer;
+                
+                &:before{
+                    content: '';
+                    background: cl(cl-white);
+                    display: inline-block;
+                    width: 25px;
+                    height: 20px;
+                }
+
+                @include hover{
+                    color: cl(cl-blue);
+
+                    &::before{
+                        background: cl(cl-blue);
+                    }
+                }
+            }
+        }
+
+        .work{
+            a{
+                &::before{
+                    mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/cc213965352f2e94e4f30def25d075348d685e35/public/images/icon/work_icon.svg) no-repeat center center / contain;
+                    -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/cc213965352f2e94e4f30def25d075348d685e35/public/images/icon/work_icon.svg) no-repeat center center / contain;
+                }    
+            }
+        }
+
+        .about{
+            a{
+                &::before{
+                    mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/0514a917fb7ca91c5e4d7e22d5c39a088d61eed8/public/images/icon/about_icon.svg) no-repeat center center / contain;
+                    -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/0514a917fb7ca91c5e4d7e22d5c39a088d61eed8/public/images/icon/about_icon.svg) no-repeat center center / contain;
+                }    
+            }
+        }
+
+        .skill{
+            a{
+                &::before{
+                    mask: url(ahttps://raw.githubusercontent.com/zatty-5118/portfolio/cc213965352f2e94e4f30def25d075348d685e35/public/images/icon/skill_icon.svg) no-repeat center center / contain;
+                    -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/cc213965352f2e94e4f30def25d075348d685e35/public/images/icon/skill_icon.svg) no-repeat center center / contain;
+                }    
+            }
+        }
+
+        .news{
+            a{
+                &::before{
+                    mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/cc213965352f2e94e4f30def25d075348d685e35/public/images/icon/news_icon.svg) no-repeat center center / contain;
+                    -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/cc213965352f2e94e4f30def25d075348d685e35/public/images/icon/news_icon.svg) no-repeat center center / contain;
+                }    
+            }
+        }
+
+    }
+}
+

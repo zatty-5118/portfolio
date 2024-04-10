@@ -1,0 +1,88 @@
+@import '../../../styles/mixin/mixin';
+
+.progressbar{
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background: cl(cl-gray);
+  overflow: hidden;
+
+  span{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: cl(cl-darkBlue);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition-timing-function: linear;
+  }
+}
+
+.slide_item{
+  position: relative;
+
+  figure{
+    img{
+      width: 100vw;
+      height: calc(100vh - 87.5px);
+
+      @include md{
+        height: calc(100vh - 7px);
+      }
+    }
+  }
+
+  figcaption{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    font-size: 12px;
+    z-index: 10;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+
+    @include md{
+      justify-content: flex-start;
+      gap: 2rem;
+      width: inherit;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    p{
+      color: cl(cl-white);
+      display: flex;
+      align-items: center;
+      gap: 4px;  
+
+      &:first-child{
+        &::before{
+          content: '';
+          mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/cc213965352f2e94e4f30def25d075348d685e35/public/images/icon/location_icon.svg) no-repeat center center / contain;
+          -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/cc213965352f2e94e4f30def25d075348d685e35/public/images/icon/location_icon.svg) no-repeat center center / contain;
+          background: cl(cl-white);
+          display: inline-block;
+          width: 8px;
+          height: 12px;
+        }    
+      }
+    }
+
+  }
+
+  span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+    width: 100%;
+    height: 50%;
+    z-index: 5;
+  }
+}

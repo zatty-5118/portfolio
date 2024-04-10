@@ -1,0 +1,69 @@
+@import '../../../styles/mixin/mixin';
+
+.newsList{
+    padding: 4rem 0 6rem;
+    background-color: cl(cl-lightGray);
+
+    .wrapper{
+        background-color: cl(cl-white);
+        border-radius: 5px;
+        padding: 1rem;
+        max-height: 250px;
+        overflow-y: auto;
+
+        @include md{
+            max-height: 340px;
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 0.5rem;
+
+            li{
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #f2f2f2;
+                padding-bottom: 0.5rem;
+
+                p{
+                    font-size: 14px;
+                }
+
+                .head{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 0.5rem;
+
+                    .date{
+                        time{
+                            color: cl(cl-darkGray);
+                        }
+                    }
+
+                    .category{
+                        width: 60px;
+                        p{
+                            color: cl(cl-white);
+                            border-radius: 5px;
+                            font-size: 12px;
+                            text-align: center;
+                        }
+
+                        .blue{
+                            background-color: cl(cl-darkBlue);
+                        }
+
+                        .yellow{
+                            background-color: #b3a557;
+                        }
+
+                    }
+    
+                }
+
+            }
+        }
+    }
+}
