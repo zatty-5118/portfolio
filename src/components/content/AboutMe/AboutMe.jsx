@@ -158,7 +158,7 @@ export default function AboutMe() {
                                         <ScrollReveal move="right">
                                             <div>
                                                 <p>スキー</p>
-                                                <p>中級レベルのコースまでなら転ばずに滑られます。</p>
+                                                <p>中級レベルのコースまでなら転ばずに滑れます。</p>
                                             </div>
                                         </ ScrollReveal>
                                     </dt>
