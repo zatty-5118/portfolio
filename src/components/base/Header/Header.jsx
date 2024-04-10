@@ -9,7 +9,7 @@ export default function Header() {
       <div className={style.wrapper}>
         <div className={style.logo}>
           <Link href="/">
-            <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/cc213965352f2e94e4f30def25d075348d685e35/public/images/zp_logo.svg" alt="ロゴ" width={50} height={50} />
+            <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/zp_logo.svg" alt="ロゴ" width={50} height={50} />
           </Link>
         </div>
         <div className={style.menu}>
