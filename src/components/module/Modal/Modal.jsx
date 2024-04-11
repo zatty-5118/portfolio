@@ -3,7 +3,7 @@ import { useState } from 'react';
 import style from "./Modal.module.scss";
 import ScrollReveal from '../ScrollReveal/ScrollReveal.jsx';
 
-const Modal = ({ buttonLabel,title,description,language,framework,library,img,url,status }) => {
+const Modal = ({ buttonLabel,title,description,period,language,framework,library,img,url,status }) => {
     const [isOpen, setIsOpen] = useState(false)
   
     const toggleModal = () => {
@@ -37,6 +37,10 @@ const Modal = ({ buttonLabel,title,description,language,framework,library,img,ur
                                 </div>
                                 <div className={style.description}>
                                     <p>{description}</p>
+                                </div>
+                                <div className={style.period}>
+                                    <h4>制作期間</h4>
+                                    <p>{period}</p>
                                 </div>
                                 <div className={style.skill}>
                                     <div>
