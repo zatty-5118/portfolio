@@ -42,7 +42,10 @@ export default function Footer() {
             <div className={style.link}>
               <ul>
                 <li>
-                  <a href="" target="_blank">ポートフォリオ</a>
+                  <a href="https://zatty-5118.github.io/portfolio/" target="_blank">ポートフォリオ</a>
+                </li>
+                <li>
+                  <a href="https://zatty-5118.github.io/blog/" target="_blank">ブログ</a>
                 </li>
               </ul>
             </div>

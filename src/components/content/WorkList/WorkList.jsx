@@ -23,22 +23,22 @@ export default function WorkList() {
                                         language="Sass(SCSS)"
                                         framework="Next.js"
                                         library="Swiper、react-scroll、scrollreveal"
-                                        url=""
+                                        url="https://zatty-5118.github.io/portfolio/"
                                         status="open"
                                     />
                                 </li>
                                 <li>
                                     <Modal 
-                                        buttonLabel="ブログ(製作中)"
+                                        buttonLabel="ブログ"
                                         img="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/workList/blog.webp"
-                                        title="zatty's Blog(製作中)"
-                                        description="現在製作中のブログです。Astro.jsを使用し、ブログはmdxファイルで記述しています。構成はトップ画面、記事一覧、カテゴリー、プロフィールの4ページ構成を想定しています。"
-                                        period="2024/4/5～"
+                                        title="zatty's Blog"
+                                        description="日々の出来事を気ままに発信するブログです。ブログの記事はNotionで書いています。フロントエンド周りはAstro.jsを使い、API経由でブログの記事を取得して表示させています。"
+                                        period="2024/4/5～2024/4/15"
                                         language="Sass(SCSS)、JavaScript"
                                         framework="Astro.js"
-                                        library="React、Swiper"
-                                        url=""
-                                        status="close"
+                                        library="unified、remark"
+                                        url="https://zatty-5118.github.io/blog/"
+                                        status="open"
                                     />
                                 </li>
                             </ul>

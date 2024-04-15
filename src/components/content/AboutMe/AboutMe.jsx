@@ -174,8 +174,12 @@ export default function AboutMe() {
                                     <dt>
                                         <ScrollReveal move="right">
                                             <div className={style.link}>
-                                                <p>Github</p>
-                                                <Link href="https://github.com/zatty-5118/" target="_blank">https://github.com/zatty-5118/</Link>
+                                                <Link href="https://github.com/zatty-5118/" target="_blank">Github</Link>
+                                            </div>
+                                        </ ScrollReveal>
+                                        <ScrollReveal move="right">
+                                            <div className={style.link}>
+                                                <Link href="https://zatty-5118.github.io/blog/" target="_blank">ブログ</Link>
                                             </div>
                                         </ ScrollReveal>
                                     </dt>
