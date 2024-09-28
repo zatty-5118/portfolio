@@ -2,6 +2,9 @@
 
 const nextConfig = {
     output: 'export',
+    images: {
+        loader: 'custom',
+    },
 };
 
 export default nextConfig;

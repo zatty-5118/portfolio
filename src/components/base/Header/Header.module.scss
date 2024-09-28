@@ -9,6 +9,10 @@
     background-color: cl(cl-darkBlue);
     z-index: 3;
 
+    @include md {
+        height: 74px;
+    }
+
     .wrapper{
         display: flex;
         justify-content: space-between;    
@@ -33,10 +37,22 @@
     }
 
     .logo{
+        display: flex;
+        align-items: center;
+
         a{
             opacity: 1;
+
             @include hover {
                 opacity: 0.5;
+            }
+
+            img{
+                max-width: 70px;
+                width: 100%;
+                @include md {
+                    max-width: 140px;
+                }
             }
         }
     }
@@ -45,6 +61,10 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        @include md {
+            align-items: flex-end;
+        }
 
         .link{
 
@@ -56,6 +76,7 @@
                 align-items: center;
                 color: cl(cl-white);
                 cursor: pointer;
+                line-height: 1.5;
                 
                 &:before{
                     content: '';
