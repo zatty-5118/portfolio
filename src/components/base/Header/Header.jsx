@@ -2,6 +2,8 @@
 import { Link as Scroll } from 'react-scroll';
 import Link from 'next/link';
 import style from './Header.module.scss';
+import Image from 'next/image';
+import header_logo from '/public/images/header/header_logo.svg';
 
 export default function Header() {
   return (
@@ -9,10 +11,7 @@ export default function Header() {
       <div className={style.wrapper}>
         <div className={style.logo}>
           <Link href="/">
-            <picture>
-              <source srcset="/images/header/header_logo_pc.svg" media="(min-width: 768px)"/>
-              <img src="/images/header/header_logo_sp.svg" alt="ヘッダーロゴ" width={50} height={50} />
-            </picture>
+            <Image loader={({src}) => src} src={header_logo} alt="ヘッダーロゴ" layout={"responsive"}/>
           </Link>
         </div>
         <div className={style.menu}>
