@@ -1,5 +1,8 @@
+"use client";
 import style from './MainView.module.scss';
 import Swiper from '../../module/Swiper/Swiper.jsx';
+import Image from 'next/image';
+import mainView_title from '/public/images/mainView/mainView_title.svg';
 
 export default function MainView() {
     return (
@@ -8,7 +11,7 @@ export default function MainView() {
                 <Swiper></Swiper>
                 <div className={style.pageTitle}>
                     <h1>
-                        <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/mainView/zatty'sPortfolio.svg" alt="zatty's Portfolio ロゴ" width={200} height={100}/>
+                        <Image loader={({src}) => src} src={mainView_title} alt="zatty's Portfolio ロゴ" layout={"responsive"}/>
                     </h1>
                 </div>
                 <div className={style.scrollDown}>

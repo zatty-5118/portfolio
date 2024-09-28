@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import style from "./Modal.module.scss";
 import ScrollReveal from '../ScrollReveal/ScrollReveal.jsx';
+import Image from 'next/image';
 
 const Modal = ({ buttonLabel,title,description,period,language,framework,library,img,url,status }) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -16,7 +17,7 @@ const Modal = ({ buttonLabel,title,description,period,language,framework,library
             <button onClick={toggleModal}>
                 <ScrollReveal move="bottom">
                     <div>
-                        <img src={img} alt={title} width={800} height={600} loading="lazy" decoding="async" />
+                        <Image loader={({src}) => src} src={img} alt={title} layout={"responsive"}/>
                     </div>
                 </ ScrollReveal>
                 <ScrollReveal move="bottom">
@@ -29,7 +30,7 @@ const Modal = ({ buttonLabel,title,description,period,language,framework,library
                     <div className={style.modal_wrapper}>
                         <div className={style.modal_contents}>
                             <div className={style.modal_image}>
-                                <img src={img} alt={title} width={800} height={600} loading="lazy" decoding="async" />
+                                <Image loader={({src}) => src} src={img} alt={title} layout={"responsive"}/>
                             </div>
                             <div className={style.modal_text}>
                                 <div className={style.title}>

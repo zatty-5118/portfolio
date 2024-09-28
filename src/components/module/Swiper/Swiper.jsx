@@ -63,7 +63,6 @@ export default function MySwiper(){
                 <div className={style.slide_item}>
                     <figure>
                         <Image loader={({src}) => src} src={slide_1} alt="ハワイ・昼間のカイルアビーチ" />
-                        {/* <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/mainView/swiper/slide_1.webp" alt="ハワイ・昼間のカイルアビーチ" width={1950} height={845}/> */}
                     </figure>
                     <figcaption>
                         <p>ハワイ・昼間のカイルアビーチ</p>
@@ -75,7 +74,6 @@ export default function MySwiper(){
             <SwiperSlide>
                 <div className={style.slide_item}>
                     <figure>
-                        {/* <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/mainView/swiper/slide_2.webp" alt="シンガポール・マーライオンの景色" width={1950} height={845}/> */}
                         <Image loader={({src}) => src} src={slide_2} alt="シンガポール・マーライオンの景色" />
                     </figure>
                     <figcaption>
@@ -88,7 +86,6 @@ export default function MySwiper(){
             <SwiperSlide>
                 <div className={style.slide_item}>
                     <figure>
-                        {/* <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/mainView/swiper/slide_3.webp" alt="ハワイ・ワイキキビーチと夕陽" width={1950} height={845}/> */}
                         <Image loader={({src}) => src} src={slide_3} alt="ハワイ・ワイキキビーチと夕陽" />
                     </figure>
                     <figcaption>
@@ -101,7 +98,6 @@ export default function MySwiper(){
             <SwiperSlide>
                 <div className={style.slide_item}>
                     <figure>
-                        {/* <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/mainView/swiper/slide_4.webp" alt="京都・圓光寺の敷き紅葉とお地蔵さん" width={1950} height={845}/> */}
                         <Image loader={({src}) => src} src={slide_4} alt="京都・圓光寺の敷き紅葉とお地蔵さん" />
                     </figure>
                     <figcaption>
@@ -114,7 +110,6 @@ export default function MySwiper(){
             <SwiperSlide>
                 <div className={style.slide_item}>
                     <figure>
-                        {/* <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/mainView/swiper/slide_5.webp" alt="沖縄・果報バンタの絶景" width={1950} height={845}/> */}
                         <Image loader={({src}) => src} src={slide_5} alt="沖縄・果報バンタの絶景" />
                     </figure>
                     <figcaption>
@@ -127,7 +122,6 @@ export default function MySwiper(){
             <SwiperSlide>
                 <div className={style.slide_item}>
                     <figure>
-                        {/* <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/mainView/swiper/slide_6.webp" alt="ハワイ・ダイヤモンドヘッドからの眺め" width={1950} height={845}/> */}
                         <Image loader={({src}) => src} src={slide_6} alt="ハワイ・ダイヤモンドヘッドからの眺め" />
                     </figure>
                     <figcaption>
@@ -140,7 +134,6 @@ export default function MySwiper(){
             <SwiperSlide>
                 <div className={style.slide_item}>
                     <figure>
-                        {/* <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/mainView/swiper/slide_7.webp" alt="ハワイ・昼間のワイキキビーチ" width={1950} height={845}/> */}
                         <Image loader={({src}) => src} src={slide_7} alt="ハワイ・昼間のワイキキビーチ" />
                     </figure>
                     <figcaption>
@@ -153,7 +146,6 @@ export default function MySwiper(){
             <SwiperSlide>
                 <div className={style.slide_item}>
                     <figure>
-                        {/* <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/mainView/swiper/slide_8.webp" alt="新潟・上越国際スキー場の景色" width={1950} height={845}/> */}
                         <Image loader={({src}) => src} src={slide_8} alt="新潟・上越国際スキー場の景色" />
                     </figure>
                     <figcaption>
