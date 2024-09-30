@@ -3,6 +3,13 @@ import { Link as Scroll } from 'react-scroll';
 import Link from 'next/link';
 import style from './AboutMe.module.scss';
 import ScrollReveal from '../../module/ScrollReveal/ScrollReveal.jsx';
+import Image from 'next/image';
+import profile_icon from '/public/images/aboutMe/profile_icon.webp';
+import aboutMe_img_1 from '/public/images/aboutMe/aboutMe_img_1.webp';
+import aboutMe_img_2 from '/public/images/aboutMe/aboutMe_img_2.webp';
+import aboutMe_img_3 from '/public/images/aboutMe/aboutMe_img_3.webp';
+import aboutMe_img_4 from '/public/images/aboutMe/aboutMe_img_4.webp';
+import aboutMe_img_5 from '/public/images/aboutMe/aboutMe_img_5.webp';
 
 export default function AboutMe() {
     return (
@@ -16,7 +23,7 @@ export default function AboutMe() {
                         <div>
                             <ScrollReveal move="right">
                                 <div className={style.profile_icon}>
-                                    <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/aboutMe/profile_icon.webp" alt="プロフィール画像" width={300} height={300} loading="lazy" decoding="async" />
+                                    <Image loader={({src}) => src} src={profile_icon} alt="プロフィール画像" layout={"responsive"}/>
                                 </div>
                             </ ScrollReveal>
                             <ScrollReveal move="right">
@@ -27,27 +34,27 @@ export default function AboutMe() {
                             <div className={style.image_pc}>
                                 <div className={style.image}>
                                     <ScrollReveal move="left">
-                                        <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/aboutMe/aboutMe_img_1.webp" alt="About Me PC用画像" width={800} height={600} loading="lazy" decoding="async"/>
+                                        <Image loader={({src}) => src} src={aboutMe_img_1} alt="About Me PC用画像" layout={"responsive"}/>
                                     </ ScrollReveal>
                                 </div>
                                 <div className={style.image}>
                                     <ScrollReveal move="right">
-                                        <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/aboutMe/aboutMe_img_2.webp" alt="About Me PC用画像" width={800} height={600} loading="lazy" decoding="async" />
+                                        <Image loader={({src}) => src} src={aboutMe_img_2} alt="About Me PC用画像" layout={"responsive"}/>
                                     </ ScrollReveal>
                                 </div>
                                 <div className={style.image}>
                                     <ScrollReveal move="left">
-                                        <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/aboutMe/aboutMe_img_3.webp" alt="About Me PC用画像" width={800} height={600} loading="lazy" decoding="async" />
+                                        <Image loader={({src}) => src} src={aboutMe_img_3} alt="About Me PC用画像" layout={"responsive"}/>
                                     </ ScrollReveal>
                                 </div>
                                 <div className={style.image}>
                                     <ScrollReveal move="right">
-                                        <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/aboutMe/aboutMe_img_4.webp" alt="About Me PC用画像" width={800} height={600} loading="lazy" decoding="async" />
+                                        <Image loader={({src}) => src} src={aboutMe_img_4} alt="About Me PC用画像" layout={"responsive"}/>
                                     </ ScrollReveal>
                                 </div>
                                 <div className={style.image}>
                                     <ScrollReveal move="left">
-                                        <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/main/public/images/aboutMe/aboutMe_img_5.webp" alt="About Me PC用画像" width={800} height={600} loading="lazy" decoding="async" />
+                                        <Image loader={({src}) => src} src={aboutMe_img_5} alt="About Me PC用画像" layout={"responsive"}/>
                                     </ ScrollReveal>
                                 </div>
                             </div>

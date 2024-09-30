@@ -1,6 +1,9 @@
 "use client";
 import { Link as Scroll } from 'react-scroll';
 import Link from 'next/link';
+import Image from 'next/image';
+import footer_portfolio_logo from '/public/images/footer/footer_portfolio_logo.svg';
+import footer_blog_logo from '/public/images/footer/footer_blog_logo.svg';
 
 import style from './Footer.module.scss';
 
@@ -11,44 +14,33 @@ export default function Footer() {
         <Scroll to='mainView' smooth={ true }>↑ページTOPへ</Scroll>
       </div>
       <div className={style.wrapper}>
-        <div className={style.pfContents}>
-          <div className="inner">
-            <div className={style.title}>
-              <p>Portfolio Contents</p>
-            </div>
-            <div className={style.link}>
-              <ul>
-                <li className={style.work}>
-                  <Scroll to='workList' smooth={ true } offset={-70}>Work List</Scroll>
-                </li>
-                <li className={style.about}>
-                  <Scroll to='aboutMe' smooth={ true } offset={-70}>About Me</Scroll>
-                </li>
-                <li className={style.skill}>
-                  <Scroll to='skillList' smooth={ true } offset={-70}>Skill List</Scroll>
-                </li>
-                <li className={style.news}>
-                  <Scroll to='newsList' smooth={ true } offset={-70}>News List</Scroll>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
         <div className={style.myContents}>
           <div className="inner">
             <div className={style.title}>
-              <p>zatty's Contents</p>
+              <p>My Contents</p>
             </div>
-            <div className={style.link}>
-              <ul>
-                <li>
-                  <a href="https://zatty-5118.github.io/portfolio/" target="_blank">ポートフォリオ</a>
-                </li>
-                <li>
-                  <a href="https://zatty-5118.github.io/blog/" target="_blank">ブログ</a>
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>
+                <Link href="https://zatty-5118.github.io/portfolio/" target='_blank'>
+                  <div className={style.image}>
+                    <Image loader={({src}) => src} src={footer_portfolio_logo} alt="zatty's Portfolio" layout={"responsive"}/>
+                  </div>
+                  <div className={style.text}>
+                    <p>フロントエンドエンジニアの「zatty」が制作した<br />Next.jsベースのポートフォリオです。</p>
+                  </div>
+                </Link>
+              </li>
+              <li>
+                <Link href="https://zatty-5118.github.io/blog/" target='_blank'>
+                  <div className={style.image}>
+                    <Image loader={({src}) => src} src={footer_blog_logo} alt="zatty's Blog" layout={"responsive"}/>
+                  </div>
+                  <div className={style.text}>
+                    <p>フロントエンドエンジニアの「zatty」が制作した<br />Astro.jsとNotion APIを活用したブログです。</p>
+                  </div>
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
         <div className={style.copyRight}>

@@ -20,7 +20,7 @@ export default async function NewsList(){
                                             <time dateTime={news.date}>{`${new Date(news.date).getFullYear()}/${('0'+(new Date(news.date).getMonth()+1)).slice(-2)}/${('0'+(new Date(news.date).getDate())).slice(-2)}`}</time>
                                         </div>
                                         <div className={style.category}>
-                                            <p className={`${news.color === "blue" ? style.blue : style.yellow}`}>{news.category}</p>
+                                            <p className={`${news.category === "Portfolio" ? style.portfolio : style.blog}`}>{news.category}</p>
                                         </div>
                                     </div>
                                     <div className={style.title}>

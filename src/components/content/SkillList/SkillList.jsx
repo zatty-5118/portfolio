@@ -1,5 +1,30 @@
+"use client";
 import style from './SkillList.module.scss';
 import ScrollReveal from '../../module/ScrollReveal/ScrollReveal.jsx';
+import Image from 'next/image';
+import html from '/public/images/skillList/html-5.svg';
+import css from '/public/images/skillList/css-3.svg';
+import sass from '/public/images/skillList/sass.svg';
+import javascript from '/public/images/skillList/javascript.svg';
+import typescript from '/public/images/skillList/typescript.svg';
+import react from '/public/images/skillList/react.svg';
+import vue from '/public/images/skillList/vue.svg';
+import astro from '/public/images/skillList/astro.svg';
+import nextjs from '/public/images/skillList/nextjs.svg';
+import nuxt from '/public/images/skillList/nuxt.svg';
+import tailwindcss from '/public/images/skillList/tailwindcss.svg';
+import git from '/public/images/skillList/git.svg';
+import github from '/public/images/skillList/github.svg';
+import visualStudioCode from '/public/images/skillList/visual-studio-code.svg';
+import vite from '/public/images/skillList/vite.svg';
+import npm from '/public/images/skillList/npm.svg';
+import nodejs from '/public/images/skillList/nodejs.svg';
+import photoshop from '/public/images/skillList/adobe-photoshop.svg';
+import illustrator from '/public/images/skillList/adobe-illustrator.svg';
+import xd from '/public/images/skillList/adobe-xd.svg';
+import notion from '/public/images/skillList/notion.svg';
+import wordpress from '/public/images/skillList/wordpress.svg';
+
 export default function Home() {
     return (
         <>
@@ -18,7 +43,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/html-5.svg" alt="html アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={html} alt="html アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -40,7 +65,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/css-3.svg" alt="css アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={css} alt="css アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -62,7 +87,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/sass.svg" alt="sass アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={sass} alt="sass アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -84,7 +109,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/javascript.svg" alt="javascript アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={javascript} alt="javascript アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -106,7 +131,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/typescript.svg" alt="typescript アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={typescript} alt="typescript アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -135,7 +160,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/react.svg" alt="React アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={react} alt="react アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -157,7 +182,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/vue.svg" alt="Vue アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={vue} alt="vue アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -186,7 +211,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/astro.svg" alt="Astro.js アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={astro} alt="Astro.js アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -208,7 +233,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/nextjs.svg" alt="Next.js アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={nextjs} alt="Next.js アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -230,7 +255,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/nuxt.svg" alt="Nuxt.js アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={nuxt} alt="Nuxt.js アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -252,7 +277,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/tailwindcss.svg" alt="tailwindcss アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={tailwindcss} alt="tailwindcss アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -281,7 +306,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/git.svg" alt="git アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={git} alt="git アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -303,7 +328,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/github.svg" alt="github アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={github} alt="github アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -325,7 +350,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/visual-studio-code.svg" alt="Visual Studio Code アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={visualStudioCode} alt="Visual Studio Code アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -347,7 +372,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/vite.svg" alt="vite アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={vite} alt="vite アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -369,7 +394,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/npm.svg" alt="npm アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={npm} alt="npm アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -391,7 +416,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/nodejs.svg" alt="Node.js アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={nodejs} alt="Node.js アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -420,7 +445,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/adobe-illustrator.svg" alt="illustrator アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={illustrator} alt="illustrator アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -442,7 +467,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/adobe-photoshop.svg" alt="Photoshop アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={photoshop} alt="Photoshop アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -464,7 +489,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/adobe-xd.svg" alt="XD アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={xd} alt="XD アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -493,7 +518,8 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/notion.svg" alt="notion アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={notion} alt="notion アイコン" layout={"responsive"}/>
+
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>
@@ -515,7 +541,7 @@ export default function Home() {
                                     <ScrollReveal move="left">
                                         <div className={style.skill_item}>
                                             <div className={style.image}>
-                                                <img src="https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/skillList/wordpress.svg" alt="wordpress アイコン" width={256} height={256} loading="lazy" decoding="async" />
+                                                <Image loader={({src}) => src} src={wordpress} alt="wordpress アイコン" layout={"responsive"}/>
                                             </div>
                                             <div className={style.details}>
                                                 <div className={style.header}>

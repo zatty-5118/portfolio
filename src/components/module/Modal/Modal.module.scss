@@ -9,12 +9,12 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: #000000a1;
+        background: cl(cl-overlay);
         z-index: 4;    
     }
 
     &_wrapper{
-        background-color: cl(cl-white);
+        background-color: cl(cl-base);
         border-radius: 5px;
         position: fixed;
         top: 50%;
@@ -105,8 +105,8 @@
             justify-content: center;
             
             a{
-                background-color: cl(cl-gray);
-                color: cl(cl-white);
+                background-color: cl(cl-gray-bg);
+                color: cl(cl-base);
                 pointer-events: none;
                 opacity: 0.5;
             }
@@ -118,15 +118,15 @@
             justify-content: center;
 
             a{
-                background-color: cl(cl-darkBlue);
-                border: 1px solid cl(cl-darkBlue);
-                color: cl(cl-white);
+                background-color: cl(cl-primary-dark);
+                border: 1px solid cl(cl-primary-dark);
+                color: cl(cl-base);
 
                 &::after{
                     content: '';
                     mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/icon/link_icon.svg) no-repeat center center / contain;
                     -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/icon/link_icon.svg) no-repeat center center / contain;
-                    background: cl(cl-white);
+                    background: cl(cl-base);
                     display: inline-block;
                     width: 12px;
                     height: 12px;
@@ -134,11 +134,11 @@
                 }
 
                 @include hover{
-                    color: cl(cl-darkBlue);
-                    background-color: cl(cl-white);
+                    color: cl(cl-primary-dark);
+                    background-color: cl(cl-base);
 
                     &::after{
-                        background: cl(cl-darkBlue);
+                        background: cl(cl-primary-dark);
                     }
                 }
             }
@@ -152,7 +152,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 20;
-        background-color: cl(cl-darkBlue);
+        background-color: cl(cl-primary-dark);
         border-radius: 5px;
         padding: 0.5rem;
 
@@ -169,7 +169,7 @@
                 content: '';
                 mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/icon/close_icon.svg) no-repeat center center / contain;
                 -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/icon/close_icon.svg) no-repeat center center / contain;
-                background: cl(cl-white);
+                background: cl(cl-base);
                 display: inline-block;
                 width: 20px;
                 height: 20px;

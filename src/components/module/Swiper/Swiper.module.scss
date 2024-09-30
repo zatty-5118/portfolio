@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   height: 7px;
-  background: cl(cl-gray);
+  background: cl(cl-gray-bg);
   overflow: hidden;
 
   span{
@@ -14,7 +14,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: cl(cl-darkBlue);
+    background: cl(cl-primary-dark);
     transform: scaleX(0);
     transform-origin: left center;
     transition-timing-function: linear;
@@ -55,7 +55,7 @@
     }
 
     p{
-      color: cl(cl-white);
+      color: cl(cl-base);
       display: flex;
       align-items: center;
       gap: 4px;  
@@ -65,7 +65,7 @@
           content: '';
           mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/icon/location_icon.svg) no-repeat center center / contain;
           -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/icon/location_icon.svg) no-repeat center center / contain;
-          background: cl(cl-white);
+          background: cl(cl-base);
           display: inline-block;
           width: 8px;
           height: 12px;

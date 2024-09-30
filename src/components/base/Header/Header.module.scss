@@ -1,12 +1,12 @@
 @import '../../../styles/mixin/mixin';
 
 .header{
-    border-bottom: 3px solid cl(cl-blue);
+    border-bottom: 3px solid cl(cl-primary-light);
     padding: 0.5rem;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: cl(cl-darkBlue);
+    background-color: cl(cl-primary);
     z-index: 3;
     display: flex;
     align-items: center;
@@ -75,23 +75,23 @@
                 flex-direction: column;
                 gap: 0.5rem;
                 align-items: center;
-                color: cl(cl-white);
+                color: cl(cl-base);
                 cursor: pointer;
                 line-height: 1;
                 
                 &:before{
                     content: '';
-                    background: cl(cl-white);
+                    background: cl(cl-base);
                     display: inline-block;
                     width: 25px;
                     height: 20px;
                 }
 
                 @include hover{
-                    color: cl(cl-blue);
+                    color: cl(cl-primary);
 
                     &::before{
-                        background: cl(cl-blue);
+                        background: cl(cl-primary);
                     }
                 }
             }

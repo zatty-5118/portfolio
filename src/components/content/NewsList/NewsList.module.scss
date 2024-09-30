@@ -2,10 +2,10 @@
 
 .newsList{
     padding: 4rem 0 6rem;
-    background-color: cl(cl-lightGray);
+    background-color: cl(cl-base-bg);
 
     .wrapper{
-        background-color: cl(cl-white);
+        background-color: cl(cl-base);
         border-radius: 5px;
         padding: 1rem;
         max-height: 250px;
@@ -23,7 +23,7 @@
             li{
                 display: flex;
                 flex-direction: column;
-                border-bottom: 1px solid #f2f2f2;
+                border-bottom: 1px solid cl(cl-base-border);
                 padding-bottom: 0.5rem;
 
                 p{
@@ -38,25 +38,25 @@
 
                     .date{
                         time{
-                            color: cl(cl-darkGray);
+                            color: cl(cl-gray-text);
                         }
                     }
 
                     .category{
                         width: 60px;
                         p{
-                            color: cl(cl-white);
+                            color: cl(cl-base);
                             border-radius: 5px;
                             font-size: 12px;
                             text-align: center;
                         }
 
-                        .blue{
-                            background-color: cl(cl-darkBlue);
+                        .portfolio{
+                            background-color: cl(cl-primary-dark);
                         }
 
-                        .yellow{
-                            background-color: #b3a557;
+                        .blog{
+                            background-color: cl(cl-brand-blog);
                         }
 
                     }
