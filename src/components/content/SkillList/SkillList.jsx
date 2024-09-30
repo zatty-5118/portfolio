@@ -24,6 +24,14 @@ import illustrator from '/public/images/skillList/adobe-illustrator.svg';
 import xd from '/public/images/skillList/adobe-xd.svg';
 import notion from '/public/images/skillList/notion.svg';
 import wordpress from '/public/images/skillList/wordpress.svg';
+import figma from '/public/images/skillList/figma.svg';
+import bitbucket from '/public/images/skillList/bitbucket.svg';
+import confluence from '/public/images/skillList/confluence.svg';
+import teams from '/public/images/skillList/microsoft-teams.svg';
+import slack from '/public/images/skillList/slack.svg';
+import sourcetree from '/public/images/skillList/sourcetree.svg';
+import jira from '/public/images/skillList/jira.svg';
+import partytown from '/public/images/skillList/partytown.svg';
 
 export default function Home() {
     return (
@@ -195,6 +203,28 @@ export default function Home() {
                                                 </div>
                                                 <div className={style.description}>
                                                     <p>現在学習中</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={partytown} alt="partytown アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>partytown</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_3}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>GTMをWebWorker上で動作させることが可能</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -434,6 +464,50 @@ export default function Home() {
                                         </div>
                                     </ ScrollReveal>
                                 </li>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={bitbucket} alt="Bitbucket アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>Bitbucket</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_1}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>プルリクエストの作成やマージなどの操作が可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={sourcetree} alt="sourcetree アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>sourcetree</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_2}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>ローカルレポジトリの作成、クローン、コミット、プッシュまで一通りの操作が可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
                             </ul>
                         </div>
                         <div id="designTool">
@@ -507,6 +581,80 @@ export default function Home() {
                                         </div>
                                     </ ScrollReveal>
                                 </li>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={figma} alt="Figma アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>Figma</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_2}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>基本操作を理解し、バナーの作成や開発モードを使用したマークアップが可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div id="chatTool">
+                            <ScrollReveal move="left">
+                                <h3>チャットツール</h3>
+                            </ ScrollReveal>
+                            <ul className={style.skill_list}>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={teams} alt="teams アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>Microsoft teams</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_3}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>チャットのやり取りやグループの作成などが可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={slack} alt="slack アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>slack</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_3}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>リストによるタスク管理やハドルミーティングを行うことが可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
                             </ul>
                         </div>
                         <div id="other">
@@ -554,6 +702,50 @@ export default function Home() {
                                                 </div>
                                                 <div className={style.description}>
                                                     <p>基本的な操作を理解し、ブログなどの記事ページを作成することが可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={jira} alt="JIRA アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>JIRA</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_1}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>チケットの作成やコメントでのやり取りが可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={confluence} alt="confluence アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>confluence</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_1}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>ページの作成やカスタマイズが可能</p>
                                                 </div>
                                             </div>
                                         </div>
