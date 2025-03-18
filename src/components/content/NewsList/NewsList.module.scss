@@ -1,8 +1,27 @@
 @import '../../../styles/mixin/mixin';
 
 .newsList{
-    padding: 4rem 0 6rem;
-    background-color: cl(cl-base-bg);
+    background: url(../../../../public/images/newsList/bg-news.webp) no-repeat center center / cover;
+    padding: 8rem 0;
+    position: relative;
+    @include md {
+        padding: 10rem 0;
+    }
+    @include lg {
+        padding: 12rem 0;
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: cl(cl-base);
+        opacity: 0.25;
+    }
 
     .wrapper{
         background-color: cl(cl-base);

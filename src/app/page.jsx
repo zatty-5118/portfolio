@@ -30,6 +30,7 @@ export default async function Home() {
     <>
       <Header />
       <main>
+        <div className="bg"></div>
         <MainView />
         <WorkList />
         <AboutMe />

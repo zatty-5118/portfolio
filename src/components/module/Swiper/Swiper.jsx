@@ -60,100 +60,116 @@ export default function MySwiper(){
             }
         >
             <SwiperSlide>
-                <div className={style.slide_item}>
-                    <figure>
-                        <Image loader={({src}) => src} src={slide_1} alt="ハワイ・昼間のカイルアビーチ" />
-                    </figure>
-                    <figcaption>
-                        <p>ハワイ・昼間のカイルアビーチ</p>
-                        <p>撮影日：2019/3/15</p>
-                    </figcaption>
-                    <span></span>
-                </div>
+                {({isActive, isPrev, isNext}) => (
+                    <div className={`${style.slide_item} ${isActive || isPrev || isNext ? style.slide_animation : null}`}>
+                        <figure>
+                            <Image loader={({src}) => src} src={slide_1} alt="ハワイ・昼間のカイルアビーチ" />
+                        </figure>
+                        <figcaption>
+                            <p>ハワイ・昼間のカイルアビーチ</p>
+                            <p>撮影日：2019/3/15</p>
+                        </figcaption>
+                        <span></span>
+                    </div>
+                )}
             </SwiperSlide>
             <SwiperSlide>
-                <div className={style.slide_item}>
-                    <figure>
-                        <Image loader={({src}) => src} src={slide_2} alt="シンガポール・マーライオンの景色" />
-                    </figure>
-                    <figcaption>
-                        <p>シンガポール・マーライオン</p>
-                        <p>撮影日：2019/1/6</p>
-                    </figcaption>
-                    <span></span>
-                </div>
+                {({isActive, isPrev, isNext}) => (
+                    <div className={`${style.slide_item} ${isActive || isPrev || isNext ? style.slide_animation : null}`}>
+                        <figure>
+                            <Image loader={({src}) => src} src={slide_2} alt="シンガポール・マーライオンの景色" />
+                        </figure>
+                        <figcaption>
+                            <p>シンガポール・マーライオン</p>
+                            <p>撮影日：2019/1/6</p>
+                        </figcaption>
+                        <span></span>
+                    </div>
+                )}
             </SwiperSlide>
             <SwiperSlide>
-                <div className={style.slide_item}>
-                    <figure>
-                        <Image loader={({src}) => src} src={slide_3} alt="ハワイ・ワイキキビーチと夕陽" />
-                    </figure>
-                    <figcaption>
-                        <p>ハワイ・ワイキキビーチと夕陽</p>
-                        <p>撮影日：2017/9/12</p>
-                    </figcaption>
-                    <span></span>
-                </div>
+                {({isActive, isPrev, isNext}) => (
+                    <div className={`${style.slide_item} ${isActive || isPrev || isNext ? style.slide_animation : null}`}>
+                        <figure>
+                            <Image loader={({src}) => src} src={slide_3} alt="ハワイ・ワイキキビーチと夕陽" />
+                        </figure>
+                        <figcaption>
+                            <p>ハワイ・ワイキキビーチと夕陽</p>
+                            <p>撮影日：2017/9/12</p>
+                        </figcaption>
+                        <span></span>
+                    </div>
+                )}
             </SwiperSlide>
             <SwiperSlide>
-                <div className={style.slide_item}>
-                    <figure>
-                        <Image loader={({src}) => src} src={slide_4} alt="京都・圓光寺の敷き紅葉とお地蔵さん" />
-                    </figure>
-                    <figcaption>
-                        <p>京都・圓光寺の敷き紅葉とお地蔵さん</p>
-                        <p>撮影日：2016/11/25</p>
-                    </figcaption>
-                    <span></span>
-                </div>
+                {({isActive, isPrev, isNext}) => (
+                    <div className={`${style.slide_item} ${isActive || isPrev || isNext ? style.slide_animation : null}`}>
+                        <figure>
+                            <Image loader={({src}) => src} src={slide_4} alt="京都・圓光寺の敷き紅葉とお地蔵さん" />
+                        </figure>
+                        <figcaption>
+                            <p>京都・圓光寺の敷き紅葉とお地蔵さん</p>
+                            <p>撮影日：2016/11/25</p>
+                        </figcaption>
+                        <span></span>
+                    </div>
+                )}
             </SwiperSlide>
             <SwiperSlide>
-                <div className={style.slide_item}>
-                    <figure>
-                        <Image loader={({src}) => src} src={slide_5} alt="沖縄・果報バンタの絶景" />
-                    </figure>
-                    <figcaption>
-                        <p>沖縄・果報バンタの絶景</p>
-                        <p>撮影日：2023/3/1</p>
-                    </figcaption>
-                    <span></span>
-                </div>
+                {({isActive, isPrev, isNext}) => (
+                    <div className={`${style.slide_item} ${isActive || isPrev || isNext ? style.slide_animation : null}`}>
+                        <figure>
+                            <Image loader={({src}) => src} src={slide_5} alt="沖縄・果報バンタの絶景" />
+                        </figure>
+                        <figcaption>
+                            <p>沖縄・果報バンタの絶景</p>
+                            <p>撮影日：2023/3/1</p>
+                        </figcaption>
+                        <span></span>
+                    </div>
+                )}
             </SwiperSlide>
             <SwiperSlide>
-                <div className={style.slide_item}>
-                    <figure>
-                        <Image loader={({src}) => src} src={slide_6} alt="ハワイ・ダイヤモンドヘッドからの眺め" />
-                    </figure>
-                    <figcaption>
-                        <p>ハワイ・ダイヤモンドヘッドからの眺め</p>
-                        <p>撮影日：2023/3/16</p>
-                    </figcaption>
-                    <span></span>
-                </div>
+                {({isActive, isPrev, isNext}) => (
+                    <div className={`${style.slide_item} ${isActive || isPrev || isNext ? style.slide_animation : null}`}>
+                        <figure>
+                            <Image loader={({src}) => src} src={slide_6} alt="ハワイ・ダイヤモンドヘッドからの眺め" />
+                        </figure>
+                        <figcaption>
+                            <p>ハワイ・ダイヤモンドヘッドからの眺め</p>
+                            <p>撮影日：2023/3/16</p>
+                        </figcaption>
+                        <span></span>
+                    </div>
+                )}
             </SwiperSlide>
             <SwiperSlide>
-                <div className={style.slide_item}>
-                    <figure>
-                        <Image loader={({src}) => src} src={slide_7} alt="ハワイ・昼間のワイキキビーチ" />
-                    </figure>
-                    <figcaption>
-                        <p>ハワイ・昼間のワイキキビーチ</p>
-                        <p>撮影日：2023/3/16</p>
-                    </figcaption>
-                    <span></span>
-                </div>
+                {({isActive, isPrev, isNext}) => (
+                    <div className={`${style.slide_item} ${isActive || isPrev || isNext ? style.slide_animation : null}`}>
+                        <figure>
+                            <Image loader={({src}) => src} src={slide_7} alt="ハワイ・昼間のワイキキビーチ" />
+                        </figure>
+                        <figcaption>
+                            <p>ハワイ・昼間のワイキキビーチ</p>
+                            <p>撮影日：2023/3/16</p>
+                        </figcaption>
+                        <span></span>
+                    </div>
+                )}
             </SwiperSlide>
             <SwiperSlide>
-                <div className={style.slide_item}>
-                    <figure>
-                        <Image loader={({src}) => src} src={slide_8} alt="新潟・上越国際スキー場の景色" />
-                    </figure>
-                    <figcaption>
-                        <p>新潟・上越国際スキー場の景色</p>
-                        <p>撮影日：2022/1/29</p>
-                    </figcaption>
-                    <span></span>
-                </div>
+                {({isActive, isPrev, isNext}) => (
+                    <div className={`${style.slide_item} ${isActive || isPrev || isNext ? style.slide_animation : null}`}>
+                        <figure>
+                            <Image loader={({src}) => src} src={slide_8} alt="新潟・上越国際スキー場の景色" />
+                        </figure>
+                        <figcaption>
+                            <p>新潟・上越国際スキー場の景色</p>
+                            <p>撮影日：2022/1/29</p>
+                        </figcaption>
+                        <span></span>
+                    </div>
+                )}
             </SwiperSlide>
             <div className={style.progressbar}>
                 <span className="progressbar_in"></span>

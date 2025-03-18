@@ -2,41 +2,42 @@
 import style from './SkillList.module.scss';
 import ScrollReveal from '../../module/ScrollReveal/ScrollReveal.jsx';
 import Image from 'next/image';
-import html from '/public/images/skillList/html-5.svg';
-import css from '/public/images/skillList/css-3.svg';
-import sass from '/public/images/skillList/sass.svg';
-import javascript from '/public/images/skillList/javascript.svg';
-import typescript from '/public/images/skillList/typescript.svg';
-import react from '/public/images/skillList/react.svg';
-import vue from '/public/images/skillList/vue.svg';
-import astro from '/public/images/skillList/astro.svg';
-import nextjs from '/public/images/skillList/nextjs.svg';
-import nuxt from '/public/images/skillList/nuxt.svg';
-import tailwindcss from '/public/images/skillList/tailwindcss.svg';
-import git from '/public/images/skillList/git.svg';
-import github from '/public/images/skillList/github.svg';
-import visualStudioCode from '/public/images/skillList/visual-studio-code.svg';
-import vite from '/public/images/skillList/vite.svg';
-import npm from '/public/images/skillList/npm.svg';
-import nodejs from '/public/images/skillList/nodejs.svg';
-import photoshop from '/public/images/skillList/adobe-photoshop.svg';
-import illustrator from '/public/images/skillList/adobe-illustrator.svg';
-import xd from '/public/images/skillList/adobe-xd.svg';
-import notion from '/public/images/skillList/notion.svg';
-import wordpress from '/public/images/skillList/wordpress.svg';
-import figma from '/public/images/skillList/figma.svg';
-import bitbucket from '/public/images/skillList/bitbucket.svg';
-import confluence from '/public/images/skillList/confluence.svg';
-import teams from '/public/images/skillList/microsoft-teams.svg';
-import slack from '/public/images/skillList/slack.svg';
-import sourcetree from '/public/images/skillList/sourcetree.svg';
-import jira from '/public/images/skillList/jira.svg';
-import partytown from '/public/images/skillList/partytown.svg';
+import html from '/public/images/skillList/icon/html-5.svg';
+import css from '/public/images/skillList/icon/css-3.svg';
+import sass from '/public/images/skillList/icon/sass.svg';
+import javascript from '/public/images/skillList/icon/javascript.svg';
+import typescript from '/public/images/skillList/icon/typescript.svg';
+import react from '/public/images/skillList/icon/react.svg';
+import vue from '/public/images/skillList/icon/vue.svg';
+import astro from '/public/images/skillList/icon/astro.svg';
+import nextjs from '/public/images/skillList/icon/nextjs.svg';
+import nuxt from '/public/images/skillList/icon/nuxt.svg';
+import tailwindcss from '/public/images/skillList/icon/tailwindcss.svg';
+import git from '/public/images/skillList/icon/git.svg';
+import github from '/public/images/skillList/icon/github.svg';
+import visualStudioCode from '/public/images/skillList/icon/visual-studio-code.svg';
+import vite from '/public/images/skillList/icon/vite.svg';
+import npm from '/public/images/skillList/icon/npm.svg';
+import nodejs from '/public/images/skillList/icon/nodejs.svg';
+import photoshop from '/public/images/skillList/icon/adobe-photoshop.svg';
+import illustrator from '/public/images/skillList/icon/adobe-illustrator.svg';
+import xd from '/public/images/skillList/icon/adobe-xd.svg';
+import notion from '/public/images/skillList/icon/notion.svg';
+import wordpress from '/public/images/skillList/icon/wordpress.svg';
+import figma from '/public/images/skillList/icon/figma.svg';
+import bitbucket from '/public/images/skillList/icon/bitbucket.svg';
+import confluence from '/public/images/skillList/icon/confluence.svg';
+import teams from '/public/images/skillList/icon/microsoft-teams.svg';
+import slack from '/public/images/skillList/icon/slack.svg';
+import sourcetree from '/public/images/skillList/icon/sourcetree.svg';
+import jira from '/public/images/skillList/icon/jira.svg';
+import partytown from '/public/images/skillList/icon/partytown.svg';
 
 export default function Home() {
     return (
         <>
             <section id="skillList" className={style.skillList}>
+                <div className={style.wave_top}></div>
                 <div className="inner">
                     <ScrollReveal move="left">
                         <h2>Skill List</h2>
@@ -755,6 +756,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <div className={style.wave_bottom}></div>
               </section>
         </>
     );

@@ -4,17 +4,23 @@ import Link from 'next/link';
 import style from './AboutMe.module.scss';
 import ScrollReveal from '../../module/ScrollReveal/ScrollReveal.jsx';
 import Image from 'next/image';
-import profile_icon from '/public/images/aboutMe/profile_icon.webp';
-import aboutMe_img_1 from '/public/images/aboutMe/aboutMe_img_1.webp';
-import aboutMe_img_2 from '/public/images/aboutMe/aboutMe_img_2.webp';
-import aboutMe_img_3 from '/public/images/aboutMe/aboutMe_img_3.webp';
-import aboutMe_img_4 from '/public/images/aboutMe/aboutMe_img_4.webp';
-import aboutMe_img_5 from '/public/images/aboutMe/aboutMe_img_5.webp';
+import profile_icon from '/public/images/aboutMe/icon/profile_icon.webp';
+import aboutMe_img_1 from '/public/images/aboutMe/icon/aboutMe_img_1.webp';
+import aboutMe_img_2 from '/public/images/aboutMe/icon/aboutMe_img_2.webp';
+import aboutMe_img_3 from '/public/images/aboutMe/icon/aboutMe_img_3.webp';
+import aboutMe_img_4 from '/public/images/aboutMe/icon/aboutMe_img_4.webp';
+import aboutMe_img_5 from '/public/images/aboutMe/icon/aboutMe_img_5.webp';
 
 export default function AboutMe() {
     return (
         <>
             <section id="aboutMe" className={style.aboutMe}>
+                <div className={style.bubble_1}></div>
+                <div className={style.bubble_2}></div>
+                <div className={style.fish_1}></div>
+                <div className={style.fish_2}></div>
+                <div className={style.fish_3}></div>
+                <div className={style.fish_4}></div>
                 <div className="inner">
                     <ScrollReveal move="right">
                         <h2>About Me</h2>
@@ -28,7 +34,7 @@ export default function AboutMe() {
                             </ ScrollReveal>
                             <ScrollReveal move="right">
                                 <div className={style.summary}>
-                                    <p>2019年新卒で旅行会社に入社。商品企画や営業を経験した後、2022年にフロントエンドエンジニアの部署に配属となる。業務ではページのデザインカンプを作成するところから、コーディング、テスト、公開まで一貫して担当。JavaScriptやフレームワークを使用したページの作成を得意とし、フロントエンドだけでなくデザインにも関われることが強み。</p>
+                                    <p>旅行会社にて商品企画や営業を経験した後、フロントエンドエンジニアの部署に配属となる。業務ではページのデザインカンプを作成するところから、コーディング、テスト、公開まで一貫して担当。転職後もwebページの制作に携わっている。JavaScriptやフレームワークを使用したページの作成を得意とし、フロントエンドだけでなくデザインにも関われることが強み。</p>
                                 </div>
                             </ ScrollReveal>
                             <div className={style.image_pc}>
@@ -63,16 +69,8 @@ export default function AboutMe() {
                             <div className={style.profile_item}>
                                 <ScrollReveal move="right">
                                     <dl>
-                                        <dd>名前</dd>
-                                        <dt>R.M</dt>
-                                    </dl>
-                                </ ScrollReveal>
-                            </div>
-                            <div className={style.profile_item}>
-                                <ScrollReveal move="right">
-                                    <dl>
-                                        <dd>生年月日</dd>
-                                        <dt>1996/04/29</dt>
+                                        <dd>HN</dd>
+                                        <dt>zatty</dt>
                                     </dl>
                                 </ ScrollReveal>
                             </div>
@@ -81,14 +79,6 @@ export default function AboutMe() {
                                     <dl>
                                         <dd>出身地</dd>
                                         <dt>東京都</dt>
-                                    </dl>
-                                </ ScrollReveal>
-                            </div>
-                            <div className={style.profile_item}>
-                                <ScrollReveal move="right">
-                                    <dl>
-                                        <dd>最終学歴</dd>
-                                        <dt>法政大学 卒業</dt>
                                     </dl>
                                 </ ScrollReveal>
                             </div>
@@ -166,6 +156,18 @@ export default function AboutMe() {
                                             <div>
                                                 <p>スキー</p>
                                                 <p>中級レベルのコースまでなら転ばずに滑れます。</p>
+                                            </div>
+                                        </ ScrollReveal>
+                                        <ScrollReveal move="right">
+                                            <div>
+                                                <p>模型制作</p>
+                                                <p>エアブラシで塗装も行います。</p>
+                                            </div>
+                                        </ ScrollReveal>
+                                        <ScrollReveal move="right">
+                                            <div>
+                                                <p>ゲーム</p>
+                                                <p>好きなジャンルはアクションゲームとRPGです。</p>
                                             </div>
                                         </ ScrollReveal>
                                     </dt>

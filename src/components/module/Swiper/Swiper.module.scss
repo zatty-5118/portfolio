@@ -1,5 +1,14 @@
 @import '../../../styles/mixin/mixin';
 
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
 .progressbar{
   position: relative;
   width: 100%;
@@ -23,6 +32,7 @@
 
 .slide_item{
   position: relative;
+  overflow: hidden;
 
   figure{
     img{
@@ -34,6 +44,15 @@
       }
     }
   }
+
+  &.slide_animation {
+    figure {
+      img {
+        animation: zoomUp 12s linear infinite;
+        // animation: zoomUp 7s linear 0s normal both;
+      }
+    }
+  }  
 
   figcaption{
     position: absolute;
@@ -63,8 +82,8 @@
       &:first-child{
         &::before{
           content: '';
-          mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/icon/location_icon.svg) no-repeat center center / contain;
-          -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/icon/location_icon.svg) no-repeat center center / contain;
+          mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/other/icon/location_icon.svg) no-repeat center center / contain;
+          -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/other/icon/location_icon.svg) no-repeat center center / contain;
           background: cl(cl-base);
           display: inline-block;
           width: 8px;

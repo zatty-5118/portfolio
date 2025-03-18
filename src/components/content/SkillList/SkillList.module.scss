@@ -1,7 +1,50 @@
 @import '../../../styles/mixin/mixin';
 
 .skillList{
-    padding: 4rem 0;
+    background-color: cl(cl-base);
+    // background-color: #edf9ff;
+    position: relative;
+
+    .wave_top{
+        width: 100%;
+        position: absolute;
+        top: -100px;
+        z-index: 2;
+        @include md {
+            top: -200px;
+        }    
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100px;
+            background: url(../../../../public/images/skillList/decoration/wave-top-white.svg) no-repeat center center / cover;
+            @include md {
+                height: 200px;
+            }    
+        }
+    }
+
+    .wave_bottom{
+        width: 100%;
+        position: absolute;
+        bottom: -100px;
+        z-index: 2;
+        @include md {
+            bottom: -200px;
+        }    
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100px;
+            background: url(../../../../public/images/skillList/decoration/wave-bottom-white.svg) no-repeat center center / cover;
+            @include md {
+                height: 200px;
+            }    
+        }
+    }
     
     .wrapper{
         display: grid;
