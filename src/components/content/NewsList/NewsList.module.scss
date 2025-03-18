@@ -1,7 +1,7 @@
 @import '../../../styles/mixin/mixin';
 
 .newsList{
-    background: url(../../../../public/images/newsList/bg-news.webp) no-repeat center center / cover;
+    background: url(https://raw.githubusercontent.com/zatty-5118/portfolio/f3161b05abdb8b5819f3501b7c9c263a2cfeaa81/public/images/newsList/bg-news.webp) no-repeat center center / cover;
     padding: 8rem 0;
     position: relative;
     @include md {

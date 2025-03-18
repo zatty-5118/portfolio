@@ -69,7 +69,7 @@ export default function AboutMe() {
                             <div className={style.profile_item}>
                                 <ScrollReveal move="right">
                                     <dl>
-                                        <dd>HN</dd>
+                                        <dd>ニックネーム</dd>
                                         <dt>zatty</dt>
                                     </dl>
                                 </ ScrollReveal>

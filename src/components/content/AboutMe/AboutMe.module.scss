@@ -27,7 +27,7 @@
 
     .bubble_1 {
         position: absolute;
-        background: url(../../../../public/images/aboutMe/decoration/bubble-1.svg) no-repeat center center / cover;
+        background: url(https://raw.githubusercontent.com/zatty-5118/portfolio/f3161b05abdb8b5819f3501b7c9c263a2cfeaa81/public/images/aboutMe/decoration/bubble-1.svg) no-repeat center center / cover;
         width: 60px;
         height: 115px;
         top: 200px;
@@ -46,7 +46,7 @@
 
     .bubble_2 {
         position: absolute;
-        background: url(../../../../public/images/aboutMe/decoration/bubble-2.svg) no-repeat center center / cover;
+        background: url(https://raw.githubusercontent.com/zatty-5118/portfolio/f3161b05abdb8b5819f3501b7c9c263a2cfeaa81/public/images/aboutMe/decoration/bubble-2.svg) no-repeat center center / cover;
         width: 60px;
         height: 185px;
         top: 250px;
@@ -65,7 +65,7 @@
 
     .fish_1 {
         position: absolute;
-        background: url(../../../../public/images/aboutMe/decoration/fish-1.svg) no-repeat center center / cover;
+        background: url(https://raw.githubusercontent.com/zatty-5118/portfolio/f3161b05abdb8b5819f3501b7c9c263a2cfeaa81/public/images/aboutMe/decoration/fish-1.svg) no-repeat center center / cover;
         width: 115px;
         height: 150px;
         top: 1000px;
@@ -78,7 +78,7 @@
 
     .fish_2 {
         position: absolute;
-        background: url(../../../../public/images/aboutMe/decoration/fish-2.svg) no-repeat center center / cover;
+        background: url(https://raw.githubusercontent.com/zatty-5118/portfolio/f3161b05abdb8b5819f3501b7c9c263a2cfeaa81/public/images/aboutMe/decoration/fish-2.svg) no-repeat center center / cover;
         width: 151px;
         height: 194px;
         top: 750px;
@@ -91,7 +91,7 @@
 
     .fish_3 {
         position: absolute;
-        background: url(../../../../public/images/aboutMe/decoration/fish-3.svg) no-repeat center center / cover;
+        background: url(https://raw.githubusercontent.com/zatty-5118/portfolio/f3161b05abdb8b5819f3501b7c9c263a2cfeaa81/public/images/aboutMe/decoration/fish-3.svg) no-repeat center center / cover;
         width: 61px;
         height: 72px;
         top: 1400px;
@@ -104,7 +104,7 @@
 
     .fish_4 {
         position: absolute;
-        background: url(../../../../public/images/aboutMe/decoration/fish-4.svg) no-repeat center center / cover;
+        background: url(https://raw.githubusercontent.com/zatty-5118/portfolio/f3161b05abdb8b5819f3501b7c9c263a2cfeaa81/public/images/aboutMe/decoration/fish-4.svg) no-repeat center center / cover;
         width: 67px;
         height: 108px;
         top: 1600px;
@@ -279,8 +279,8 @@
 
                             &::after{
                                 content: '';
-                                mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/other/icon/link_icon.svg) no-repeat center center / contain;
-                                -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/08f979ddd7f2ed365b459eb65fe9466934152ff7/public/images/other/icon/link_icon.svg) no-repeat center center / contain;
+                                mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/f3161b05abdb8b5819f3501b7c9c263a2cfeaa81/public/images/other/icon/link_icon.svg) no-repeat center center / contain;
+                                -webkit-mask: url(https://raw.githubusercontent.com/zatty-5118/portfolio/f3161b05abdb8b5819f3501b7c9c263a2cfeaa81/public/images/other/icon/link_icon.svg) no-repeat center center / contain;
                                 background: cl(cl-text);
                                 display: inline-block;
                                 width: 15px;
