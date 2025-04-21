@@ -32,6 +32,7 @@ import slack from '/public/images/skillList/icon/slack.svg';
 import sourcetree from '/public/images/skillList/icon/sourcetree.svg';
 import jira from '/public/images/skillList/icon/jira.svg';
 import partytown from '/public/images/skillList/icon/partytown.svg';
+import gpt from '/public/images/skillList/icon/gpt.svg';
 
 export default function Home() {
     return (
@@ -605,6 +606,35 @@ export default function Home() {
                                     </ ScrollReveal>
                                 </li>
 
+                            </ul>
+                        </div>
+                        <div id="aiTool">
+                            <ScrollReveal move="left">
+                                <h3>AIツール</h3>
+                            </ ScrollReveal>
+                            <ul className={style.skill_list}>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={gpt} alt="GPT アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>Chat GPT</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_3}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>出力構造と挙動特性を把握し、プロンプトの構文設計・再現性向上のための制御テンプレート開発に対応可能。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
                             </ul>
                         </div>
                         <div id="chatTool">

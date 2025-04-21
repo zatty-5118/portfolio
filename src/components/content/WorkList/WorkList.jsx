@@ -4,6 +4,7 @@ import ScrollReveal from '../../module/ScrollReveal/ScrollReveal.jsx';
 import Modal from '../../module/Modal/Modal.jsx';
 import portfolio from '/public/images/workList/thumbnail/portfolio.jpg';
 import blog from '/public/images/workList/thumbnail/blog.jpg';
+import gptdoc from '/public/images/workList/thumbnail/gptdoc.jpg';
 
 export default function WorkList() {
     return (
@@ -40,6 +41,20 @@ export default function WorkList() {
                                     framework="Astro.js"
                                     library="unified、remark"
                                     url="https://zatty-5118.github.io/blog/"
+                                    status="open"
+                                />
+                            </li>
+                            <li>
+                                <Modal 
+                                    buttonLabel="GPT出力制御プロジェクト"
+                                    img={gptdoc}
+                                    title="GPT出力制御プロジェクト"
+                                    description="本ページは、ChatGPTを用いた創作出力の制御構造を設計・検証した記録をまとめたものです。出力内容の再現性を高めるため、独自のテンプレート制御・照合ルール・ループ構造を設計し、実際のプロンプト例や比較結果を通じて、構造設計の効果を可視化しています。"
+                                    period="2025/4/1～2025/4/20"
+                                    language="HTML、CSS、Javascript"
+                                    framework="未使用"
+                                    library="未使用"
+                                    url="https://zatty-5118.github.io/gpt-doc/"
                                     status="open"
                                 />
                             </li>

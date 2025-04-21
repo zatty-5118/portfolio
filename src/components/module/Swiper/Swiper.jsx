@@ -24,6 +24,7 @@ export default function MySwiper(){
             loop = { true }
             speed = { 1000 }
             allowTouchMove = { false }
+            resizeObserver = { false }
             init = { false }
             observer={true}
             modules = {
