@@ -88,11 +88,7 @@
                 }
 
                 @include hover{
-                    color: cl(cl-primary);
-
-                    &::before{
-                        background: cl(cl-primary);
-                    }
+                    opacity: 0.5;
                 }
             }
         }

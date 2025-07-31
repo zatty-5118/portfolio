@@ -58,7 +58,7 @@ const Modal = ({ buttonLabel,title,description,period,language,framework,library
                                     </div>
                                 </div>
                                 <div className={`${status === 'open' ? style.link : style.disabled}`}>
-                                    <a href={url}>{`${status === 'open' ? "詳細はこちら" : "Cooming Soon"}`}</a>
+                                    <a href={url} target="_blank">{`${status === 'open' ? "詳細はこちら" : "Cooming Soon"}`}</a>
                                 </div>
                             </div>
                         </div>
