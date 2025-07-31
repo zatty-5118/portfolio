@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import footer_portfolio_logo from '/public/images/footer/footer_portfolio_logo.svg';
 import footer_blog_logo from '/public/images/footer/footer_blog_logo.svg';
+import footer_sb_logo from '/public/images/footer/footer_sb_logo.svg';
 
 import style from './Footer.module.scss';
 
@@ -37,6 +38,16 @@ export default function Footer() {
                   </div>
                   <div className={style.text}>
                     <p>フロントエンドエンジニアの「zatty」が制作した<br />Astro.jsとNotion APIを活用したブログです。</p>
+                  </div>
+                </Link>
+              </li>
+              <li>
+                <Link href="https://zatty-5118.github.io/storybook/" target='_blank'>
+                  <div className={style.image}>
+                    <Image loader={({src}) => src} src={footer_sb_logo} alt="zatty's Blog" layout={"responsive"}/>
+                  </div>
+                  <div className={style.text}>
+                    <p>フロントエンドエンジニアの「zatty」が制作した<br />Vite×React×Storybookで作成したUIカタログ集です。</p>
                   </div>
                 </Link>
               </li>

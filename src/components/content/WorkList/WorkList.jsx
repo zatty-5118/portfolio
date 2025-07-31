@@ -5,6 +5,7 @@ import Modal from '../../module/Modal/Modal.jsx';
 import portfolio from '/public/images/workList/thumbnail/portfolio.jpg';
 import blog from '/public/images/workList/thumbnail/blog.jpg';
 import gptdoc from '/public/images/workList/thumbnail/gptdoc.jpg';
+import storybook from '/public/images/workList/thumbnail/storybook.jpg';
 
 export default function WorkList() {
     return (
@@ -55,6 +56,20 @@ export default function WorkList() {
                                     framework="未使用"
                                     library="未使用"
                                     url="https://zatty-5118.github.io/gpt-doc/"
+                                    status="open"
+                                />
+                            </li>
+                            <li>
+                                <Modal 
+                                    buttonLabel="Storybook"
+                                    img={storybook}
+                                    title="zatty's Storybook"
+                                    description="Vite×React×Storybookで作成したUIコンポーネントのカタログ集です。開発やデザインの効率化を目的として、ViteとReact、Storybookを活用して開発された再利用可能なUIコンポーネントを一覧で紹介しています。各コンポーネントは用途や動作が視覚的に確認できます。"
+                                    period="2025/7/11～2025/7/30"
+                                    language="HTML Sass(SCSS)、JavaScript"
+                                    framework="React、Vite"
+                                    library="Storybook"
+                                    url="https://zatty-5118.github.io/storybook/"
                                     status="open"
                                 />
                             </li>

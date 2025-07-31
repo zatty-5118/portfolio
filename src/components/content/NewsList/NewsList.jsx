@@ -3,7 +3,6 @@ import ScrollReveal from '../../module/ScrollReveal/ScrollReveal.jsx';
 import array__allNewsData from '../../api/notion/route.jsx';
 
 export default async function NewsList(){
-    
     return (
         <section id="newsList" className={style.newsList}>
             <div className="inner">
@@ -20,7 +19,10 @@ export default async function NewsList(){
                                             <time dateTime={news.date}>{`${new Date(news.date).getFullYear()}/${('0'+(new Date(news.date).getMonth()+1)).slice(-2)}/${('0'+(new Date(news.date).getDate())).slice(-2)}`}</time>
                                         </div>
                                         <div className={style.category}>
-                                            <p className={`${news.category === "Portfolio" ? style.portfolio : style.blog}`}>{news.category}</p>
+                                            <p className={`${
+                                                news.category === "Portfolio" ? style.portfolio :
+                                                news.category === "Blog" ? style.blog : style.storybook
+                                            }`}>{news.category}</p>
                                         </div>
                                     </div>
                                     <div className={style.title}>

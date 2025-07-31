@@ -137,7 +137,7 @@ export default function AboutMe() {
                                         <ScrollReveal move="right">
                                             <div>
                                                 <p>野球観戦</p>
-                                                <p>横浜DeNAベイスターズの大ファン（ファン歴17年）です。</p>
+                                                <p>横浜DeNAベイスターズの大ファンです。</p>
                                             </div>
                                         </ ScrollReveal>
                                         <ScrollReveal move="right">
@@ -189,6 +189,11 @@ export default function AboutMe() {
                                         <ScrollReveal move="right">
                                             <div className={style.link}>
                                                 <Link href="https://zatty-5118.github.io/blog/" target="_blank">ブログ</Link>
+                                            </div>
+                                        </ ScrollReveal>
+                                        <ScrollReveal move="right">
+                                            <div className={style.link}>
+                                                <Link href="https://zatty-5118.github.io/storybook/" target="_blank">Storybook</Link>
                                             </div>
                                         </ ScrollReveal>
                                     </dt>

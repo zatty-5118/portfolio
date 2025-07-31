@@ -33,6 +33,9 @@ import sourcetree from '/public/images/skillList/icon/sourcetree.svg';
 import jira from '/public/images/skillList/icon/jira.svg';
 import partytown from '/public/images/skillList/icon/partytown.svg';
 import gpt from '/public/images/skillList/icon/gpt.svg';
+import storybook from '/public/images/skillList/icon/storybook-icon.svg';
+import windows from '/public/images/skillList/icon/microsoft-windows.svg';
+import mac from '/public/images/skillList/icon/apple.svg';
 
 export default function Home() {
     return (
@@ -227,6 +230,28 @@ export default function Home() {
                                                 </div>
                                                 <div className={style.description}>
                                                     <p>GTMをWebWorker上で動作させることが可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={storybook} alt="storybook アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>Storybook</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_2}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>コンポーネントの作成やカスタマイズなどが可能</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -681,6 +706,57 @@ export default function Home() {
                                                 </div>
                                                 <div className={style.description}>
                                                     <p>リストによるタスク管理やハドルミーティングを行うことが可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="os">
+                            <ScrollReveal move="left">
+                                <h3>OS</h3>
+                            </ ScrollReveal>
+                            <ul className={style.skill_list}>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={windows} alt="Windows アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>Windows</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_2}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>基本操作を理解し、環境構築やレジストリの変更、修正などに対応可能</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ ScrollReveal>
+                                </li>
+                                <li>
+                                    <ScrollReveal move="left">
+                                        <div className={style.skill_item}>
+                                            <div className={style.image}>
+                                                <Image loader={({src}) => src} src={mac} alt="Mac アイコン" layout={"responsive"}/>
+                                            </div>
+                                            <div className={style.details}>
+                                                <div className={style.header}>
+                                                    <div className={style.name}>
+                                                        <h3>Mac</h3>
+                                                    </div>
+                                                    <div className={style.rate}>
+                                                        <span className={`${style.rate_star} ${style.rate_1}`}></span>
+                                                    </div>
+                                                </div>
+                                                <div className={style.description}>
+                                                    <p>基本操作を理解し、環境構築などにも対応可能</p>
                                                 </div>
                                             </div>
                                         </div>
