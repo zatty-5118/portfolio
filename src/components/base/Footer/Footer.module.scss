@@ -38,7 +38,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
 
-            @include md {
+            @include lg {
                 display: flex;
                 align-items: center;
                 justify-content: center;
