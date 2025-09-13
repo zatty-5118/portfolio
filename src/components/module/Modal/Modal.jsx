@@ -4,7 +4,7 @@ import style from "./Modal.module.scss";
 import ScrollReveal from '../ScrollReveal/ScrollReveal.jsx';
 import Image from 'next/image';
 
-const Modal = ({ buttonLabel,title,description,period,language,framework,library,img,url,status }) => {
+const Modal = ({ buttonLabel,title,description,period,stack,img,url,status }) => {
     const [isOpen, setIsOpen] = useState(false)
   
     const toggleModal = () => {
@@ -45,16 +45,8 @@ const Modal = ({ buttonLabel,title,description,period,language,framework,library
                                 </div>
                                 <div className={style.skill}>
                                     <div>
-                                        <h4>言語</h4>
-                                        <p>{language}</p>
-                                    </div>
-                                    <div>
-                                        <h4>フレームワーク</h4>
-                                        <p>{framework}</p>
-                                    </div>
-                                    <div>
-                                        <h4>ライブラリ</h4>
-                                        <p>{library}</p>
+                                        <h4>技術スタック</h4>
+                                        <p>{stack}</p>
                                     </div>
                                 </div>
                                 <div className={`${status === 'open' ? style.link : style.disabled}`}>
