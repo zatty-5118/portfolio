@@ -6,6 +6,7 @@ import portfolio from '/public/images/workList/thumbnail/portfolio.jpg';
 import blog from '/public/images/workList/thumbnail/blog.jpg';
 import gptdoc from '/public/images/workList/thumbnail/gptdoc.jpg';
 import storybook from '/public/images/workList/thumbnail/storybook.jpg';
+import sentchat from '/public/images/workList/thumbnail/sentchat.jpg';
 
 export default function WorkList() {
     return (
@@ -73,6 +74,21 @@ export default function WorkList() {
                                     status="open"
                                 />
                             </li>
+                            <li>
+                                <Modal 
+                                    buttonLabel="SentChat"
+                                    img={sentchat}
+                                    title="SentChat"
+                                    description="LINE風UIで選択式のやり取りができるチャットアプリです。Firebase認証（Google/GitHub対応）とFirestoreを活用し、Cloudflareでデプロイしています。マイページでは回答履歴をグラフ化し、自分の傾向を直感的に把握できます。"
+                                    period="2025/8/10～2025/9/12"
+                                    language="HTML Sass(SCSS)、JavaScript"
+                                    framework=""
+                                    library=""
+                                    url="https://sentchat-app.pages.dev/login"
+                                    status="open"
+                                />
+                            </li>
+
                         </ul>
                     </div>
                 </div>
