@@ -13,6 +13,6 @@ response.results.map((news) => {
     obj.color = news.properties.Category.select.color;
     obj.date = news.properties.Date.date.start;
     array__allNewsData.push(obj);
-});    
-
+});
+array__allNewsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 export default array__allNewsData;
