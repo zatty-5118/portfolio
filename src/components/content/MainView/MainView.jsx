@@ -1,16 +1,25 @@
 "use client";
+import { useEffect, useRef } from "react";
 import style from './MainView.module.scss';
 import Swiper from '../../module/Swiper/Swiper.jsx';
 import Image from 'next/image';
 import mainView_title from '/public/images/mainView/mainView_title.svg';
 
 export default function MainView() {
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.play();
+        }
+    }, [videoRef]);
+
     return (
         <>
             <section id="mainView" className={style.mainView}>
                 {/* <Swiper></Swiper> */}
                 <div className={style.video}>
-                    <video autoPlay muted loop playsInline>
+                    <video ref={videoRef} autoPlay muted loop playsInline>
                         <source src={`/video/mainView.mp4`} type="video/mp4" />
                     </video>
                 </div>
