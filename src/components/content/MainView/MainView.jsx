@@ -20,7 +20,7 @@ export default function MainView() {
                 {/* <Swiper></Swiper> */}
                 <div className={style.video}>
                     <video ref={videoRef} autoPlay muted loop playsInline>
-                        <source src={`/video/mainView.mp4`} type="video/mp4" />
+                        <source src={`/video/mainView_compressed.mp4`} type="video/mp4" />
                     </video>
                 </div>
                 {/* <div className={style.pageTitle}>
