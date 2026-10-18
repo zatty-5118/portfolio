@@ -25,14 +25,14 @@ export default function MainView() {
                         <source src={`${basePath}/video/mainView.mp4`} type="video/mp4" />
                     </video>
                 </div>
-                {/* <div className={style.pageTitle}>
+                <div className={style.pageTitle}>
                     <h1>
                         <Image loader={({src}) => src} src={mainView_title} alt="zatty's Portfolio ロゴ" layout={"responsive"}/>
                     </h1>
                 </div>
                 <div className={style.scrollDown}>
                     <span>Scroll</span>
-                </div> */}
+                </div>
             </section>
         </>
     );
