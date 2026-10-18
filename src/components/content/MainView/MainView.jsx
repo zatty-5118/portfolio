@@ -14,23 +14,25 @@ export default function MainView() {
         }
     }, [videoRef]);
 
+    const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
+
     return (
         <>
             <section id="mainView" className={style.mainView}>
                 {/* <Swiper></Swiper> */}
                 <div className={style.video}>
                     <video ref={videoRef} autoPlay muted loop playsInline>
-                        <source src={`/video/mainView_compressed.mp4`} type="video/mp4" />
+                        <source src={`${basePath}/video/mainView.mp4`} type="video/mp4" />
                     </video>
                 </div>
-                {/* <div className={style.pageTitle}>
+                <div className={style.pageTitle}>
                     <h1>
                         <Image loader={({src}) => src} src={mainView_title} alt="zatty's Portfolio ロゴ" layout={"responsive"}/>
                     </h1>
                 </div>
                 <div className={style.scrollDown}>
                     <span>Scroll</span>
-                </div> */}
+                </div>
             </section>
         </>
     );
