@@ -9,16 +9,16 @@
         height: 100vh;
         height: 100svh;
 
-        // &::before {
-        //     content: "";
-        //     display: inline-block;
-        //     width: 100%;
-        //     height: 100%;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     background-color: cl(cl-shadow);
-        // }
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: cl(cl-shadow);
+        }
 
         video {
             width: 100%;
